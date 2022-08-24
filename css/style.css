@@ -1,0 +1,588 @@
+/* --------　全体共通　------- */
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    /* font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "MS Ｐ明朝", "MS PMincho", "MS 明朝", serif; */
+    font-family: "Noto Serif JP", serif;
+    font-size: 14px;
+}
+
+
+a:hover {
+    opacity: 0.7;
+}
+
+h1 a:hover {
+    opacity: 1;
+}
+
+.content {
+    padding-top: 130px;
+}
+
+/* --------　　ヘッダー　------- */
+header {
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+header .hamburger {
+    display: none;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin-left: 40px;
+}
+
+header .header-top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-top-left address {
+    margin: 0 40px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+header .nav-pc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-pc li {
+    width: calc(100%/6);
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #E9E9E5;
+    background-color: #F3F3F3;
+}
+
+header .nav-pc li a {
+    display: block;
+}
+
+/* --------　コンテンツ　サイド　------- */
+.content aside {
+    width: 280px;
+}
+
+.content aside ul {
+    border: 1px solid #DBD5C7;
+    height: 140px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content aside i {
+    float: right;
+    /* fontawesomeの文字を細くする */
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.content aside p {
+    font-size: 14px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #33ABA4;
+    color: #ffffff;
+}
+
+.content aside p a {
+    display: block;
+}
+
+
+/* --------　フッター　sns　------- */
+footer .sns {
+    margin-bottom: 90px;
+    margin-top: 100px;
+}
+
+footer .sns ul {
+    width: 254px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+/* --------　フッター　メインメニュー　------- */
+footer .return-top {
+    border-top: 1px solid #333;
+    position: relative;
+}
+
+footer .return-top p {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    color: #333;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: 150px;
+    top: -30px;
+}
+
+footer .return-top a::after {
+    content: "↑";
+}
+
+footer .return-top a {
+    display: block;
+}
+
+footer .main-menu {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+footer .main-menu h4 {
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    position: relative;
+}
+
+footer .main-menu h4::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #33ABA4;
+    position: absolute;
+    top: -15px;
+    display: block;
+}
+
+footer .main-menu ul {
+    max-width: 850px;
+    height: 334px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer .main-menu li {
+    padding-bottom: 20px;
+}
+
+footer .main-menu .li24 {
+    margin-bottom: 120px;
+}
+
+footer h1,
+footer address {
+    text-align: right;
+    margin-right: 20px;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    background-color: #EBEBEB;
+    color: #BBBBBB;
+    font-size: 13px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* --------　トップページコンテンツ　メインイメージ　------- */
+#top .content img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    left: 0;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+/* --------　トップページコンテンツ　アナウンス　------- */
+.content .content-top {
+    font-size: 16px;
+    max-width: 1080px;
+    height: 190px;
+    margin: 150px auto 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .content .announce {
+    width: 70%;
+    border: 1px solid #DBD5C7;
+    display: flex;
+    align-items: center;
+}
+
+#top .content .announce h3 {
+    height: 120px;
+    line-height: 120px;
+    padding: 0 10px 0 40px;
+    border-right: 1px solid #DBD5C7;
+}
+
+#top .content .announce ul {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top .content .announce li {
+    padding: 10px;
+}
+
+#top .content .announce time {
+    color: #CDCDCD;
+    padding-right: 20px;
+}
+
+
+/* --------　トップページコンテンツ　ニュース　------- */
+#top .content article {
+    background-image: url(../images/background-image.jpeg);
+    padding: 90px 100px;
+}
+
+#top .content .news {
+    background-color: #ffffff;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 70px 60px 70px;
+}
+
+#top .content .news h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#top .content .group1 figure {
+    width: 30%;
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+#top .content .group2 figure {
+    width: 30%;
+    margin-bottom: 50px;
+    line-height: 1.5;
+
+}
+
+#top .content figure img {
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+
+#top .content .group1,
+#top .content .group2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .news-button a {
+    display: block;
+}
+
+#top .content .news p {
+    width: 215px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #333;
+    position: relative;
+}
+
+#top .content .news p::before {
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: 24px;
+    display: block;
+    background-color: #ffffff;
+}
+
+
+/* --------　学校案内　お問い合せ　共通　------- */
+.contents-title {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contents-title .title {
+    width: 45%;
+    padding-top: 80px;
+    font-size: 36px;
+}
+
+.contents-title h2 {
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    margin-left: 180px;
+}
+
+.contents-title h2::before {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #33ABA4;
+    position: absolute;
+    display: block;
+    top: 60px;
+}
+
+.title-middle {
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* --------　学校案内　------- */
+#info article {
+    max-width: 1080px;
+    margin: 0 auto 150px;
+}
+
+#info article p {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    line-height: 2;
+}
+
+#info .group {
+    padding: 0 80px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info figure img {
+    margin-bottom: 15px;
+}
+
+#info figcaption {
+    text-align: center;
+    color: #BCAD80;
+}
+
+#info h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#info .content-top {
+    height: 400px;
+}
+
+#info .info-more {
+    width: 60%;
+    margin-left: 20px;
+}
+
+#info .info-more li {
+    padding: 20px 0;
+    border-top: 1px solid #DBD5C7;
+    width: 50%;
+}
+
+#info .border-bottom {
+    border-bottom: 1px solid #DBD5C7;
+}
+
+#info .info-more1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 180px;
+    margin-bottom: 60px;
+}
+
+#info .info-more2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #707070;
+    width: 10px;
+    height: 10px;
+}
+
+/* --------　お問い合わせ　------- */
+#form .contact {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#form dl {
+    overflow: hidden;
+}
+
+#form dt {
+    width: 30%;
+    height: 75px;
+    border: 1px solid #DBD5C7;
+    border-bottom: none;
+    float: left;
+    background-color: #F7F6F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form dd {
+    float: right;
+    width: 70%;
+    height: 75px;
+    border: 1px solid #DBD5C7;
+    border-bottom: none;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form .area {
+    height: 190px;
+}
+
+#form .last {
+    border-bottom: 1px solid #DBD5C7;
+}
+
+#form input[type="text"],
+#form input[type="email"] {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: 1px solid #dfdfdb;
+    border-radius: 3px;
+}
+
+#form .area-checkbox {
+    padding: 45px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#form .area-checkbox label {
+    max-width: 350px;
+    height: 40px;
+}
+
+#form textarea {
+    width: 80%;
+    height: 150px;
+    border: none;
+    outline: 1px solid #dfdfdb;
+    border-radius: 3px;
+}
+
+#form input[type="submit"] {
+    width: 230px;
+    height: 45px;
+    background-color: #33ABA4;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#form .button {
+    text-align: center;
+    margin: 60px 0 100px 0;
+}
+
+#form .form-address {
+    width: 70%;
+    height: 190px;
+    border: 1px solid #DBD5C7;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#form span {
+    color: red;
+}
+
+/* --------　アクセス　------- */
+#access .map {
+    max-width: 1080px;
+    margin: 0 auto 100px;
+}
+
+#access .map iframe {
+    max-width: 100%;
+}
+
+#access .bus {
+    width: 70%;
+    height: 190px;
+    border: 1px solid #DBD5C7;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* --------　準備中　------- */
+#school-life .content,
+#test .content,
+#course .content {
+    font-size: 18px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#school-life .content h2,
+#test .content h2,
+#course .content h2 {
+    margin-bottom: 20px;
+}

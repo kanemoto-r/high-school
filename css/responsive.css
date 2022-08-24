@@ -1,0 +1,335 @@
+@media screen and (max-width:890px) {
+    header .header-top-left address {
+        display: none;
+    }
+
+    header h1 {
+        margin-left: 10px;
+    }
+
+    footer .main-menu ul {
+        font-size: 13px;
+    }
+
+    footer .main-menu .li24 {
+        margin-bottom: 0;
+    }
+
+    #top .content .announce {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top .content .announce h3 {
+        font-size: 20px;
+        line-height: 1;
+        padding-left: 10px;
+        height: auto;
+        margin: 10px 0 20px;
+        border-right: none;
+    }
+
+    #top .content .announce li {
+        padding-top: 0;
+    }
+
+    #top .content .announce time {
+        display: block;
+    }
+
+    #top .content article {
+        padding: 90px 20px;
+    }
+
+    #top .content .news {
+        padding: 100px 30px 60px 30px;
+    }
+
+    div.contents-title h2 {
+        margin-left: 20px;
+    }
+
+    #access .bus {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:606px) {
+    header {
+        border-bottom: 1px solid #E9E9E5;
+    }
+
+    header .header-top-left {
+        display: none;
+    }
+
+    header .nav-pc {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    /* hamburger */
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav {
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position: fixed;
+        z-index: 999;
+        /*ナビのスタート位置と形状*/
+        top: 0;
+        right: -120%;
+        width: 100%;
+        height: 100vh;
+        /*ナビの高さ*/
+        background: #ffffff;
+        /*動き*/
+        transition: all 0.6s;
+    }
+
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive {
+        right: 0;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list {
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        /*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li {
+        list-style: none;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #g-nav li a {
+        color: #333;
+        text-decoration: none;
+        padding: 15px 0;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn {
+        position: fixed;
+        z-index: 9999;
+        /*ボタンを最前面に*/
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*×に変化*/
+    .openbtn span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top: 15px;
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top: 31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    footer .main-menu ul,
+    footer .main-menu h4,
+    footer .return-top {
+        display: none;
+    }
+
+    footer h1,
+    footer address {
+        text-align: center;
+    }
+
+
+    .content {
+        padding-top: 80px;
+    }
+
+    .content .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .content-top {
+        height: auto;
+        margin: 40px auto 80px;
+    }
+
+    #top .content .announce {
+        margin-bottom: 150px;
+        padding: 20px;
+    }
+
+    .content aside {
+        width: 70%;
+    }
+
+    .content aside p {
+        width: auto;
+    }
+
+    #top .content .group1,
+    #top .content .group2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top .content .group1 figure {
+        width: 90%;
+        text-align: center;
+    }
+
+    #top .content .group2 figure {
+        width: 90%;
+        text-align: center;
+    }
+
+    #top .content .group1 figure figcaption,
+    #top .content .group2 figure figcaption {
+        width: 80%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .contents-title {
+        flex-direction: column-reverse;
+    }
+
+    .contents-title .title {
+        padding-top: 40px;
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+
+    .title-middle {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    #info .group {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #info .group figure a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    #info .group figure img {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    #info .info-more {
+        width: 90%;
+        margin-bottom: 150px;
+    }
+
+    #info .content {
+        /* snsと被らないように */
+        padding-bottom: 200px;
+    }
+
+    #form .form-address {
+        margin-bottom: 150px;
+    }
+
+    #form dl {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form dt {
+        width: 100%;
+    }
+
+    #form dd {
+        width: 100%;
+        border-left: 1px solid #DBD5C7;
+    }
+
+    #form .area {
+        height: 75px;
+    }
+
+    #form .area-checkbox,
+    #form dd.last {
+        height: 190px;
+    }
+
+    #form .button {
+        margin-top: 20px;
+    }
+
+    #access .bus {
+        margin-bottom: 130px;
+    }
+
+}
